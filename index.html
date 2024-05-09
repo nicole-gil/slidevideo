@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider video Nicole</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="bannerVideo" id="slideShow">
+        <video
+          src="./css/img/corea-del-sur_zQ85WyjR.mp4"
+          autoplay
+          muted
+          loop class="active"
+          
+        ></video>
+        <video src="./css/img/londres_6M6Ih8UI.mp4" autoplay muted loop ></video>
+        <video src="./css/img/tokyo.mp4" autoplay muted loop></video>
+      </div>
+      <div class="container">
+        <header id="navbar">
+          <a href="#" class="logo">El Mundo</a>
+          <ul>
+            <li><a href="#" class="active">Inicio</a></li>
+            <li><a href="#">Destinos</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+          <span class="menuIcon" onclick="toggleMenu()"></span>
+        </header>
+        <div class="content">
+          <div class="bannerText" id="slideShowText">
+            <div class="active">
+              <h2>Corea del sur</h2>
+              <p>
+                Podrás sumergirte en el mundo de la tecnología al visitar ciudades como Seúl, donde encontrarás rascacielos futuristas, museos interactivos y una infraestructura moderna. Además, podrás disfrutar de la comodidad de la conexión de alta velocidad a Internet y la tecnología avanzada que se encuentra en todas partes.
+              </p>
+            </div>
+            <div>
+              <h2>Inglaterra</h2>
+              <p>
+                Ciudades preciosas, gastronomía exquisita, historia musical y sitios históricos, son motivos más que suficientes para conocer el Reino Unido y disfrutar de unas vacaciones inolvidables.
+              </p>
+            </div>
+            <div>
+              <h2>Tokyo</h2>
+              <p>
+                Cuenta con una historia fascinante, festividades, gastronomía de fama mundial, cultura, tiendas, rascacielos, museos, parques, etc. Una ciudad increíble que ofrece algo para todos y que creo que se debe visitar al menos una vez en la vida.
+              </p>
+            </div>
+          </div>
+        </div>
+        <ul class="controls">
+          <li onclick="prevSlide();prevSlideText();"><img src="./css/img/left.png" /></li>
+          <li onclick="nextSlide();nextSlideText();"><img src="./css/img/right.png" /></li>
+        </ul>
+      </div>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
